@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Cats</title>
+</head>
+<body>
+    <h1>Cats App</h1>
+    <span id="error"></span>
+    <section id="RandomCats">
+        <h2>Random cats</h2>
+        <article>
+            <img id="img1" width="250" alt="Random cat">
+            <button id="btn1"> Save cat image in favorites</button>
+        </article>
+        <article>
+            <img id="img2" width="250" alt="Random cat">
+            <button id="btn2"> Save cat image in favorites</button>
+        </article>
+        <article>
+            <img id="img3" width="250" alt="Random cat">
+            <button id="btn3"> Save cat image in favorites</button>
+        </article>
+        <button onclick="loadRandomMichis()">Get Random cat</button>
+    </section>
+    <section id="uploadingCat">
+        <h2>Upload a cat photo</h2>
+        <form id="uploadingForm">
+            <input id="file" type="file" name="file" />
+            <button type="button" onclick="uploadCatPhoto()">Upload photo of cat</button>
+        </form>
+    </section>
+    <section id="favoriteCats">
+        <h2>Favorite cats</h2>
+        <article>
+            <img id="img1" width="250" alt="Random cat">
+            <button>Get cat from favorites</button>
+        </article>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
